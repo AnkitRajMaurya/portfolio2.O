@@ -1,174 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- ✅ SEO Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ankit Raj Maurya | Web Developer Portfolio</title>
+    <meta name="description" content="Ankit Raj Maurya's professional web developer portfolio, showcasing skills, projects, and experience in web development." />
+    <meta name="keywords" content="Ankit Raj, Portfolio, Web Developer, Frontend Developer, HTML, CSS, JavaScript, React, Node.js, GitHub" />
+    <meta name="author" content="Ankit Raj Maurya" />
+    <meta name="robots" content="index, follow" />
 
-  <!-- SEO Meta Tags -->
-  <title>Ankit Raj Maurya | Web Developer Portfolio</title>
-  <meta name="description" content="Ankit Raj Maurya's professional web developer portfolio, showcasing skills, projects, and experience in web development." />
-  <meta name="keywords" content="Ankit Raj, Ankit Raj Maurya, Portfolio, Web Developer, Frontend Developer, HTML, CSS, JavaScript, React, Node.js, GitHub" />
-  <meta name="author" content="Ankit Raj Maurya" />
-  <meta name="robots" content="index, follow" />
+    <!-- ✅ Open Graph / Facebook Meta Tags -->
+    <meta property="og:title" content="Ankit Raj Maurya | Web Developer Portfolio" />
+    <meta property="og:description" content="Explore Ankit Raj Maurya's skills, projects, and experience as a web developer." />
+    <meta property="og:image" content="pic.jpg" />
+    <meta property="og:url" content="https://ankitrajmaurya.github.io/Portfolio-/" />
+    <meta property="og:type" content="website" />
 
-  <!-- Open Graph / Facebook Meta Tags -->
-  <meta property="og:title" content="Ankit Raj Maurya | Web Developer Portfolio" />
-  <meta property="og:description" content="Explore Ankit Raj Maurya's skills, projects, and experience as a web developer." />
-  <meta property="og:image" content="https://ankitrajmaurya.github.io/Portfolio-/pic.jpg" />
-  <meta property="og:url" content="https://ankitrajmaurya.github.io/Portfolio-/" />
-  <meta property="og:type" content="website" />
+    <!-- ✅ Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ankit Raj Maurya | Web Developer Portfolio" />
+    <meta name="twitter:description" content="Check out the portfolio of Ankit Raj Maurya, showcasing web development projects and skills." />
+    <meta name="twitter:image" content="pic.jpg" />
 
-  <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Ankit Raj Maurya | Web Developer Portfolio" />
-  <meta name="twitter:description" content="Check out the portfolio of Ankit Raj Maurya, showcasing web development projects and skills." />
-  <meta name="twitter:image" content="https://ankitrajmaurya.github.io/Portfolio-/pic.jpg" />
+    <!-- ✅ Favicon -->
+    <link id="favicon" rel="shortcut icon" href="pic.jpg" type="image/x-png">
 
-  <!-- Favicon -->
-  <link id="favicon" rel="shortcut icon" href="pic.jpg" type="image/x-png">
-
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- ✅ Stylesheets -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav id="navbar">
-    <div class="logo">Ankit Raj</div>
-    <div class="more-menu">
-      <button class="more-btn" onclick="toggleMenu()">More</button>
-      <div class="dropdown" id="dropdownMenu">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
-      </div>
-    </div>
-  </nav>
+    <!-- ✅ Navbar Start -->
+    <nav id="navbar">
+        <div class="logo">Ankit Raj</div>
+        <div class="more-menu">
+            <button class="more-btn" onclick="toggleMenu()">☰</button>
+            <div class="dropdown" id="dropdownMenu">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- ✅ Navbar End -->
 
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="hero-line"></div>
-    <h1>Hi There, I'm <span class="ankit">Ankit</span> <span class="raj">Raj</span></h1>
+    <!-- ✅ Hero Section Start -->
+    <header class="hero" data-aos="fade-up">
+        <div class="hero-line"></div>
+        <h1>Hi There, I'm <span class="ankit">Ankit</span> <span class="raj">Raj</span></h1>
 
-    <div class="typing-box">
-      <span class="prefix">I'm Into</span>
-      <span id="typed-text"></span><span class="cursor">|</span>
-    </div>
-
-    <img src="pic.jpg" alt="Ankit Raj" class="profile-pic loading-img" />
-
-    <div class="social-icons">
-      <a href="mailto:ankit5242raj1@outlook.com"><i class="fas fa-envelope"></i></a>
-      <a href="https://github.com/AnkitRajMaurya" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://instagram.com/ankit5242raj" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://linkedin.com/in/ankit5242raj" target="_blank"><i class="fab fa-linkedin"></i></a>
-    </div>
-  </header>
-
-  <!-- About Section -->
-  <section id="about" class="section-box">
-    <div class="container">
-      <h2>About Me</h2>
-      <p id="type-about"></p>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="skills section-box">
-    <div class="container">
-      <h2>Skills</h2>
-      <ul>
-        <li class="skill-html">HTML5</li>
-        <li class="skill-css">CSS3</li>
-        <li class="skill-js">JavaScript</li>
-        <li class="skill-react">React</li>
-        <li class="skill-node">Node.js</li>
-        <li class="skill-mongo">MongoDB</li>
-        <li class="skill-flutter">Flutter</li>
-        <li class="skill-git">Git & GitHub</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Education Section -->
-  <section id="education" class="section-box">
-    <div class="container">
-      <h2>Education</h2>
-      <p><strong>Diploma in Computer Science</strong> — NRI Institute of Research and Technology (2024 - 2027)</p>
-      <p><strong>MATRIC</strong> — Bihar School Examination Board (2024)</p>
-    </div>
-  </section>
-
-  <!-- Experience Section -->
-  <section id="experience" class="section-box">
-    <div class="container">
-      <h2>Experience</h2>
-      <p><strong>Internship:</strong> Tata Power Skill Development Institute (Web Developer Intern)</p>
-      <p><strong>Freelancer:</strong> Built websites and apps for clients and personal use.</p>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="section-box">
-    <div class="container">
-      <h2>My Projects</h2>
-
-      <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
-        <p>This portfolio is designed and coded by me to showcase my web development skills.</p>
-      </div>
-
-      <div class="project-card">
-        <h3>Weather App</h3>
-        <p><strong>Tech:</strong> React, API</p>
-        <p>An app to display real-time weather data using OpenWeather API.</p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer-section">
-    <div class="container">
-      <h2 class="footer-title">Ankit's Portfolio</h2>
-      <p>Thank you for visiting my personal portfolio website. Connect with me over socials.</p>
-      <p>Keep Rising 🚀. Connect with me over live chat!</p>
-
-      <div class="footer-grid">
-        <div class="footer-card">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Work Experience</a></li>
-          </ul>
+        <div class="typing-box">
+            <span class="prefix">I'm Into</span>
+            <span id="typed-text"></span><span class="cursor">|</span>
         </div>
 
-        <div class="footer-card">
-          <h3>Contact Info</h3>
-          <p>+91 XXX-XXX-XXXX</p>
-          <p>ankit5242raj1@outlook.com</p>
-          <p>Muzaffarpur, Bihar, 8413126</p>
+        <img src="pic.jpg" alt="Ankit Raj" class="profile-pic loading-img" onload="this.classList.add('loaded')" />
 
-          <div class="social-icons">
-            <a href="mailto:ankit5242raj1@outlook.com"><i class="fas fa-envelope"></i></a>
-            <a href="https://github.com/AnkitRajMaurya" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://instagram.com/ankit5242raj" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://linkedin.com/in/ankit5242raj" target="_blank"><i class="fab fa-linkedin"></i></a>
-          </div>
+        <div class="social-icons">
+            <a href="mailto:ankit5242raj1@outlook.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/AnkitRajMaurya" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com/ankit5242raj" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/in/ankit5242raj" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
         </div>
-      </div>
+    </header>
+    <!-- ✅ Hero Section End -->
 
-      <p class="footer-glow">Designed with ♥ by ANKIT RAJ</p>
-    </div>
-  </footer>
+    <!-- ✅ About Section Start -->
+    <section id="about" class="section-box" data-aos="fade-up">
+        <div class="container">
+            <h2>About Me</h2>
+            <p id="type-about">I'm Ankit Raj from Muzaffarpur, Bihar. I'm passionate about Web and App Development, constantly learning and building to create impactful software.</p>
+        </div>
+    </section>
+    <!-- ✅ About Section End -->
 
-  <script src="script.js"></script>
+    <!-- ✅ Skills Section Start -->
+    <section id="skills" class="skills section-box" data-aos="fade-up">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li class="skill-html">HTML5</li>
+                <li class="skill-css">CSS3</li>
+                <li class="skill-js">JavaScript</li>
+                <li class="skill-react">React</li>
+                <li class="skill-node">Node.js</li>
+                <li class="skill-mongo">MongoDB</li>
+                <li class="skill-flutter">Flutter</li>
+                <li class="skill-git">Git & GitHub</li>
+            </ul>
+        </div>
+    </section>
+    <!-- ✅ Skills Section End -->
+
+    <!-- ✅ Education Section Start -->
+    <section id="education" class="section-box" data-aos="fade-up">
+        <div class="container">
+            <h2>Education</h2>
+            <p><strong>Diploma in Computer Science</strong> — NRI Institute of Research and Technology (2024 - 2027)</p>
+            <p><strong>MATRIC</strong> — Bihar School Examination Board (2024)</p>
+        </div>
+    </section>
+    <!-- ✅ Education Section End -->
+
+    <!-- ✅ Experience Section Start -->
+    <section id="experience" class="section-box" data-aos="fade-up">
+        <div class="container">
+            <h2>Experience</h2>
+            <p><strong>Internship:</strong> Tata Power Skill Development Institute (Web Developer Intern)</p>
+            <p><strong>Freelancer:</strong> Built websites and apps for clients and personal use.</p>
+        </div>
+    </section>
+    <!-- ✅ Experience Section End -->
+
+    <!-- ✅ Projects Section Start -->
+    <section id="projects" class="section-box" data-aos="fade-up">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+                <p>This portfolio is designed and coded by me to showcase my web development skills.</p>
+            </div>
+            <div class="project-card">
+                <h3>Weather App</h3>
+                <p><strong>Tech:</strong> React, API</p>
+                <p>An app to display real-time weather data using OpenWeather API.</p>
+            </div>
+        </div>
+    </section>
+    <!-- ✅ Projects Section End -->
+
+    <!-- ✅ Contact Section Start -->
+    <section id="contact" class="section-box" data-aos="fade-up">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="https://formspree.io/f/maylnyye" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <!-- ✅ Contact Section End -->
+
+    <!-- ✅ Footer Section Start -->
+    <footer class="footer-section">
+        <div class="container">
+            <h2 class="footer-title">Ankit's Portfolio</h2>
+            <p>Thank you for visiting my personal portfolio website. Connect with me over socials.</p>
+            <p>Keep Rising 🚀. Connect with me over live chat!</p>
+
+            <div class="footer-grid">
+                <div class="footer-card">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#experience">Work Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-card">
+                    <h3>Contact Info</h3>
+                    <p>+91 9876543210</p>
+                    <p>ankit5242raj1@outlook.com</p>
+                    <p>Muzaffarpur, Bihar, 842126</p>
+                    <div class="social-icons">
+                        <a href="mailto:ankit5242raj1@outlook.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/AnkitRajMaurya" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://instagram.com/ankit5242raj" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com/in/ankit5242raj" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="footer-glow">Designed with ♥ by ANKIT RAJ</p>
+        </div>
+    </footer>
+    <!-- ✅ Footer Section End -->
+
+    <!-- ✅ Back to Top Button -->
+    <button onclick="topFunction()" id="backToTop" title="Go to top">↑</button>
+
+    <!-- ✅ Scripts -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        // Back to Top button functionality
+        let mybutton = document.getElementById("backToTop");
+        window.onscroll = function() {
+            mybutton.style.display = (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? "block" : "none";
+        };
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        // Toggle Menu for Mobile Nav
+        function toggleMenu() {
+            var menu = document.getElementById("dropdownMenu");
+            menu.style.display = (menu.style.display === "block") ? "none" : "block";
+        }
+    </script>
+    <script src="script.js"></script>
+
 </body>
 </html>
