@@ -1,0 +1,62 @@
+{
+  "name": "Ankit Raj Maurya",
+  "title": "Web Developer",
+  "bio": "I am Ankit Raj, a passionate web developer from Muzaffarpur, Bihar. I specialize in web and app development, continuously learning and growing in the field.",
+  "contact": {
+    "email": "ankit5242raj1@outlook.com",
+    "phone": "+91 XXX-XXX-XXXX",
+    "location": "Muzaffarpur, Bihar, 8413126"
+  },
+  "socials": {
+    "github": "https://github.com/AnkitRajMaurya",
+    "linkedin": "https://linkedin.com/in/ankit5242raj",
+    "instagram": "https://instagram.com/ankit5242raj"
+  },
+  "skills": [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "React",
+    "Node.js",
+    "MongoDB",
+    "Flutter",
+    "Git & GitHub"
+  ],
+  "projects": [
+    {
+      "title": "Portfolio Website",
+      "description": "A personal portfolio website built to showcase my web development skills.",
+      "technologies": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "title": "Weather App",
+      "description": "An app that displays real-time weather data using OpenWeather API.",
+      "technologies": ["React", "API"]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Diploma in Computer Science",
+      "institution": "NRI INSTITUTE OF RESEARCH AND TECHNOLOGY",
+      "duration": "2024 - 2027"
+    },
+    {
+      "degree": "MATRIC",
+      "institution": "Bihar School Examination Board",
+      "year": "2024"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Intern",
+      "company": "Tata Power Skill Development Institute",
+      "duration": "2024",
+      "description": "Web Developer Intern"
+    },
+    {
+      "role": "Freelancer",
+      "company": "Self-employed",
+      "description": "Built websites and apps for clients and personal use."
+    }
+  ]
+}
