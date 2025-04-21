@@ -137,21 +137,21 @@ header.hero {
 }
 
 .typing-box .prefix {
-  color: #ff6f61;
+  color: #e91e63; /* Pink */
   font-weight: 700;
   text-shadow:
       1px 1px 0 #fff,
-      2px 2px 0 #ff6f61,
+      2px 2px 0 #e91e63,
       3px 3px 5px rgba(0, 0, 0, 0.3),
-      0 0 10px #ff6f61;
+      0 0 10px #e91e63;
   letter-spacing: 1px;
 }
 
 #typed-text {
-  color: #00796b;
+  color: #4caf50; /* Green */
   font-weight: 700;
   font-size: 1.1rem;
-  text-shadow: 0 0 10px #00b4d8; /* Glowing effect */
+  text-shadow: 0 0 10px #8bc34a; /* Light Green glow */
 }
 
 .cursor {
@@ -171,13 +171,13 @@ header.hero {
 }
 
 .ankit {
-  color: #00796b;
-  text-shadow: 0 0 8px #00796b; /* Glowing effect */
+  color: #ff9800; /* Orange */
+  text-shadow: 0 0 8px #ffc107; /* Amber glow */
 }
 
 .raj {
-  color: #00b4d8;
-  text-shadow: 0 0 8px #00b4d8; /* Glowing effect */
+  color: #9c27b0; /* Purple */
+  text-shadow: 0 0 8px #ba68c8; /* Light Purple glow */
 }
 
 h1,
@@ -401,36 +401,80 @@ h1 {
 }
 
 /* Bold Text Glowing Effect - Different Colors */
-section h2, section p strong {
-  text-shadow: 0 0 8px #ff6347, 0 0 15px #ff6347; /* Tomato for About */
+section h2 {
+  text-shadow: 0 0 8px #ff6347, 0 0 15px #ff6347; /* Tomato for About (h2) */
 }
 
 #about section p strong {
   color: #ff6347;
-  text-shadow: 0 0 8px #ff6347, 0 0 20px #ff6347;
+  text-shadow: 0 0 8px #ff6347, 0 0 20px #ff6347; /* Tomato for About section strong */
+}
+
+#skills section h2 {
+  text-shadow: 0 0 8px #ffdb58, 0 0 15px #ffdb58; /* Mustard for Skills (h2) */
 }
 
 #skills section p strong {
   color: #ffdb58;
-  text-shadow: 0 0 8px #ffdb58, 0 0 20px #ffdb58; /* Mustard for Skills */
+  text-shadow: 0 0 8px #ffdb58, 0 0 20px #ffdb58; /* Mustard for Skills section strong */
+}
+
+#education section h2 {
+  text-shadow: 0 0 8px #4682b4, 0 0 15px #4682b4; /* SteelBlue for Education (h2) */
 }
 
 #education section p strong {
-  color: #4682b4;
-  text-shadow: 0 0 8px #4682b4, 0 0 20px #4682b4; /* SteelBlue for Education */
+  color: blue; /* Blue for Diploma and MATRIC */
+  text-shadow: none; /* Remove glow for blue text */
+}
+
+#education section p span strong {
+  color: green; /* Green for pursuing and completed */
+  font-weight: bold; /* Make pursuing and completed bold */
+  text-shadow: none; /* Remove glow for green text */
+}
+
+#experience section h2 {
+  text-shadow: 0 0 8px #32cd32, 0 0 15px #32cd32; /* LimeGreen for Experience (h2) */
 }
 
 #experience section p strong {
   color: #32cd32;
-  text-shadow: 0 0 8px #32cd32, 0 0 20px #32cd32; /* LimeGreen for Experience */
+  text-shadow: 0 0 8px #32cd32, 0 0 20px #32cd32; /* LimeGreen for Experience section strong */
+}
+
+#projects section h2 {
+  text-shadow: 0 0 8px #8a2be2, 0 0 15px #8a2be2; /* BlueViolet for Projects (h2) */
 }
 
 #projects section p strong {
   color: #8a2be2;
-  text-shadow: 0 0 8px #8a2be2, 0 0 20px #8a2be2; /* BlueViolet for Projects */
+  text-shadow: 0 0 8px #8a2be2, 0 0 20px #8a2be2; /* BlueViolet for Projects section strong */
+}
+
+#contact section h2 {
+  text-shadow: 0 0 8px #ff1493, 0 0 15px #ff1493; /* DeepPink for Contact (h2) */
 }
 
 #contact section p strong {
   color: #ff1493;
-  text-shadow: 0 0 8px #ca8eae, 0 0 20px #ff1493; /* DeepPink for Contact */
+  text-shadow: 0 0 8px #ca8eae, 0 0 20px #ff1493; /* DeepPink for Contact section strong */
+}
+
+/* Resume Button in About Section */
+.resume-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 20px;
+  box-shadow: 4px 4px 8px #888888;
+  transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #0056b3;
 }
