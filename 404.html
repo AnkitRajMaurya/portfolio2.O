@@ -1,46 +1,52 @@
-</html>
-<!DOCTYPE html>
+</body>
+</html><!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>404 Not Found</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@400;600&display=swap');
+  <title>404 Not Found | Ankit Raj Maurya</title>
+  <meta name="description" content="Page not found - Ankit Raj Maurya Portfolio" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
 
+  <style>
     body {
       margin: 0;
-      padding: 0;
       font-family: 'Poppins', sans-serif;
       background: radial-gradient(circle at center, #111, #000);
       color: #fff;
+      min-height: 100vh;
       display: flex;
+      flex-direction: column;
+    }
+
+    .container-404 {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      overflow: hidden;
+      padding: 40px 20px;
       text-align: center;
     }
 
-    .container {
-      animation: fadeIn 1.5s ease-in-out;
-    }
-
-    h1 {
+    .container-404 h1 {
       font-family: 'Orbitron', sans-serif;
       font-size: 6rem;
       color: #ff004c;
-      margin-bottom: 10px;
       text-shadow: 0 0 15px rgba(255, 0, 76, 0.6);
+      margin-bottom: 20px;
     }
 
-    p {
-      font-size: 1.2rem;
+    .container-404 p {
+      font-size: 1.3rem;
       color: #ccc;
       margin-bottom: 30px;
     }
 
-    a {
+    .container-404 a {
       display: inline-block;
       padding: 12px 25px;
       background: #ff004c;
@@ -51,21 +57,95 @@
       transition: background 0.3s ease;
     }
 
-    a:hover {
+    .container-404 a:hover {
       background: #e6003e;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
-  <div class="container">
+
+  <!-- Header/Navbar -->
+  <nav id="navbar">
+    <div class="logo">Ankit Raj</div>
+    <div class="more-menu">
+      <button class="more-btn" onclick="toggleMenu()">☰</button>
+      <div class="dropdown" id="dropdownMenu">
+        <a href="index.html#about">About</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#education">Education</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 404 Section -->
+  <div class="container-404" data-aos="fade-up">
     <h1>404</h1>
     <p>Page not found. Maybe the universe swallowed it?</p>
     <a href="index.html">Back to Home</a>
   </div>
+
+  <!-- Footer -->
+  <footer class="footer-section">
+    <div class="container">
+      <h2 class="footer-title">Ankit's Portfolio</h2>
+      <p>Thank you for visiting my personal portfolio website. Connect with me over socials.</p>
+      <p>Keep Rising 🚀. Connect with me over live chat!</p>
+
+      <div class="footer-grid">
+        <div class="footer-card">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#education">Education</a></li>
+            <li><a href="index.html#experience">Work Experience</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+          </ul>
+        </div>
+        <div class="footer-card">
+          <h3>Contact Info</h3>
+          <p>+91 XXXXXXXX09</p>
+          <p>ankit5242raj1@outlook.com</p>
+          <p>Muzaffarpur, Bihar, 842126</p>
+          <div class="social-icons">
+            <a href="mailto:ankit5242raj1@outlook.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/AnkitRajMaurya" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com/ankit5242raj" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/in/ankit5242raj" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <p class="footer-glow">Designed with ♥ by ANKIT RAJ</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button onclick="topFunction()" id="backToTop" title="Go to top">↑</button>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    let mybutton = document.getElementById("backToTop");
+    window.onscroll = function () {
+      mybutton.style.display = (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? "block" : "none";
+    };
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+    function toggleMenu() {
+      var menu = document.getElementById("dropdownMenu");
+      menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
 </body>
 </html>
