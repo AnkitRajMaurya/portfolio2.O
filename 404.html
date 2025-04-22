@@ -1,151 +1,324 @@
-</body>
-</html><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>404 Not Found | Ankit Raj Maurya</title>
-  <meta name="description" content="Page not found - Ankit Raj Maurya Portfolio" />
+  <title>404 Not Found</title>
+  <meta name="description" content="Ankit Raj Maurya's professional web developer portfolio, showcasing skills, projects, and experience in web development." />
+  <meta name="keywords" content="Ankit Raj, Portfolio, Web Developer, Frontend Developer, HTML, CSS, JavaScript, React, Node.js, GitHub" />
+  <meta name="author" content="Ankit Raj Maurya" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="404 Not Found | Ankit Raj Maurya" />
+  <meta property="og:description" content="Page not found. Check out Ankit Raj Maurya's web developer portfolio." />
+  <meta property="og:image" content="pic.jpg" />
+  <meta property="og:url" content="https://ankitrajmaurya.github.io/Portfolio-/" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="404 Not Found | Ankit Raj Maurya" />
+  <meta name="twitter:description" content="Page not found. Explore Ankit Raj Maurya's web development portfolio." />
+  <meta name="twitter:image" content="pic.jpg" />
+
+  <link id="favicon" rel="shortcut icon" href="pic.jpg" type="image/x-png">
+
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
-
   <style>
+    /* Global Body Styles */
     body {
       margin: 0;
+      padding: 0;
       font-family: 'Poppins', sans-serif;
-      background: radial-gradient(circle at center, #111, #000);
-      color: #fff;
-      min-height: 100vh;
+      background-color: #000;
+      color: white;
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
+      min-height: 100vh;
+      text-align: center;
+      overflow-x: hidden;
     }
 
-    .container-404 {
-      flex: 1;
+    /* Header Styles */
+    nav {
+      background-color: #000;
+      color: #fff;
+      padding: 10px 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ff004c; /* Logo Color changed */
+    }
+
+    /* Hamburger Menu */
+    .menu {
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 30px;
+    }
+
+    .menu div {
+      background-color: #ff004c; /* Hamburger color changed */
+      height: 4px;
+      width: 30px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Mobile Menu Toggle */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background-color: #000;
+        width: 200px;
+        padding: 20px;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .menu {
+        display: flex;
+        cursor: pointer;
+      }
+    }
+
+    /* Glitchy 404 Error Text */
+    .container {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 40px 20px;
-      text-align: center;
+      height: 100%;
+      padding: 50px;
+      position: relative;
+      z-index: 1;
     }
 
-    .container-404 h1 {
+    .container h1 {
+      font-size: 8rem;
       font-family: 'Orbitron', sans-serif;
-      font-size: 6rem;
+      position: relative;
+      color: red;
+      letter-spacing: 10px;
+      animation: glitch 1s infinite linear alternate-reverse;
+    }
+
+    .container p {
+      font-size: 2rem;
+      margin-top: 20px;
       color: #ff004c;
-      text-shadow: 0 0 15px rgba(255, 0, 76, 0.6);
-      margin-bottom: 20px;
+      animation: glitch 1s infinite linear alternate-reverse;
     }
 
-    .container-404 p {
-      font-size: 1.3rem;
-      color: #ccc;
-      margin-bottom: 30px;
-    }
-
-    .container-404 a {
+    .container a {
       display: inline-block;
       padding: 12px 25px;
-      background: #ff004c;
+      background-color: #ff004c;
       color: #fff;
-      border-radius: 30px;
       text-decoration: none;
+      border-radius: 30px;
       font-weight: bold;
-      transition: background 0.3s ease;
+      margin-top: 30px;
+      animation: glitch 1s infinite linear alternate-reverse;
     }
 
-    .container-404 a:hover {
-      background: #e6003e;
+    .container a:hover {
+      background-color: #e6003e;
+      transform: scale(1.1);
+      transition: 0.3s ease;
     }
+
+    /* Footer Styles */
+    footer {
+      background-color: #000;
+      color: white;
+      padding: 30px;
+      position: relative;
+      z-index: 1000;
+      margin-top: 50px;
+    }
+
+    footer .footer-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #ff004c; /* Footer title color */
+    }
+
+    footer .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    footer .footer-card ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    footer .footer-card ul li {
+      margin: 5px 0;
+    }
+
+    footer .footer-card a {
+      color: #ff004c; /* Links color */
+      text-decoration: none;
+    }
+
+    footer .footer-card a:hover {
+      color: #fff; /* Hover effect color */
+    }
+
+    footer .social-icons a {
+      color: #ff004c;
+      margin-right: 15px;
+    }
+
+    footer .footer-glow {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #ff004c;
+    }
+
+    /* Glitch Effect */
+    @keyframes glitch {
+      0% {
+        text-shadow: 1px 0px 0 #ff004c, -1px 0px 0 #ff004c;
+        transform: translate(0);
+      }
+      20% {
+        text-shadow: 2px 0px 0 #ff004c, -2px 0px 0 #ff004c;
+        transform: translate(-5px, -5px);
+      }
+      40% {
+        text-shadow: -2px 0px 0 #ff004c, 2px 0px 0 #ff004c;
+        transform: translate(5px, 5px);
+      }
+      60% {
+        text-shadow: -2px -2px 0 #ff004c, 2px 2px 0 #ff004c;
+        transform: translate(-5px, -5px);
+      }
+      80% {
+        text-shadow: 2px -2px 0 #ff004c, -2px 2px 0 #ff004c;
+        transform: translate(5px, 5px);
+      }
+      100% {
+        text-shadow: 1px 0px 0 #ff004c, -1px 0px 0 #ff004c;
+        transform: translate(0);
+      }
+    }
+
   </style>
 </head>
 <body>
-
-  <!-- Header/Navbar -->
-  <nav id="navbar">
+  <!-- Header Start -->
+  <nav>
     <div class="logo">Ankit Raj</div>
-    <div class="more-menu">
-      <button class="more-btn" onclick="toggleMenu()">☰</button>
-      <div class="dropdown" id="dropdownMenu">
-        <a href="index.html#about">About</a>
-        <a href="index.html#skills">Skills</a>
-        <a href="index.html#education">Education</a>
-        <a href="index.html#experience">Experience</a>
-        <a href="index.html#projects">Projects</a>
-        <a href="index.html#contact">Contact</a>
-      </div>
+    <div class="menu" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
     </div>
   </nav>
+  <!-- Header End -->
 
-  <!-- 404 Section -->
-  <div class="container-404" data-aos="fade-up">
+  <!-- Main Content -->
+  <div class="container">
     <h1>404</h1>
-    <p>Page not found. Maybe the universe swallowed it?</p>
-    <a href="index.html">Back to Home</a>
+    <p>This page is lost in the void... somewhere.</p>
+    <a href="index.html">Return to Safety</a>
   </div>
 
-  <!-- Footer -->
-  <footer class="footer-section">
-    <div class="container">
-      <h2 class="footer-title">Ankit's Portfolio</h2>
-      <p>Thank you for visiting my personal portfolio website. Connect with me over socials.</p>
-      <p>Keep Rising 🚀. Connect with me over live chat!</p>
-
-      <div class="footer-grid">
-        <div class="footer-card">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#about">About</a></li>
-            <li><a href="index.html#skills">Skills</a></li>
-            <li><a href="index.html#education">Education</a></li>
-            <li><a href="index.html#experience">Work Experience</a></li>
-            <li><a href="index.html#projects">Projects</a></li>
-          </ul>
-        </div>
-        <div class="footer-card">
-          <h3>Contact Info</h3>
-          <p>+91 XXXXXXXX09</p>
-          <p>ankit5242raj1@outlook.com</p>
-          <p>Muzaffarpur, Bihar, 842126</p>
-          <div class="social-icons">
-            <a href="mailto:ankit5242raj1@outlook.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-            <a href="https://github.com/AnkitRajMaurya" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://instagram.com/ankit5242raj" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://linkedin.com/in/ankit5242raj" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          </div>
+  <!-- Footer Start -->
+  <footer>
+    <div class="footer-title">Ankit's Portfolio</div>
+    <p>Thank you for visiting my personal portfolio website. Connect with me over socials.</p>
+    <div class="footer-grid">
+      <div class="footer-card">
+        <h3 style="color: #ff004c;">Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </div>
+      <div  class="footer-card">
+        <h3 style="color: #ff004c;">Contact Info</h3>
+        <p style="color: red;">+91 XXXXXXXX09</p>
+        <p style="color: red;">ankit5242raj1@outlook.com</p>
+        <p style="color: red;">Muzaffarpur, Bihar, 842126</p>
+        <div class="social-icons">
+          <a href="mailto:ankit5242raj1@outlook.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://github.com/AnkitRajMaurya" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://instagram.com/ankit5242raj" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://linkedin.com/in/ankit5242raj" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
         </div>
       </div>
-
-      <p class="footer-glow">Designed with ♥ by ANKIT RAJ</p>
     </div>
-  </footer>
 
-  <!-- Back to Top Button -->
+    <p class="footer-glow">Designed with ♥ by ANKIT RAJ</p>
+  </footer>
+  <!-- Footer End -->
+
   <button onclick="topFunction()" id="backToTop" title="Go to top">↑</button>
 
-  <!-- Scripts -->
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init();
 
+    // Toggle Menu
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    }
+
+    // Back to Top button functionality
     let mybutton = document.getElementById("backToTop");
-    window.onscroll = function () {
+    window.onscroll = function() {
       mybutton.style.display = (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? "block" : "none";
     };
     function topFunction() {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
-
-    function toggleMenu() {
-      var menu = document.getElementById("dropdownMenu");
-      menu.style.display = (menu.style.display === "block") ? "none" : "block";
-    }
   </script>
-
 </body>
 </html>
