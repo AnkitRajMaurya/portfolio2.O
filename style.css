@@ -9,7 +9,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background: #ffffff;
   color: #222;
-  scroll-behavior: smooth; /* Enable smooth scrolling */
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -137,21 +137,21 @@ header.hero {
 }
 
 .typing-box .prefix {
-  color: #e91e63; /* Pink */
+  color: #e91e63;
   font-weight: 700;
   text-shadow:
-      1px 1px 0 #fff,
-      2px 2px 0 #e91e63,
-      3px 3px 5px rgba(0, 0, 0, 0.3),
-      0 0 10px #e91e63;
+    1px 1px 0 #fff,
+    2px 2px 0 #e91e63,
+    3px 3px 5px rgba(0, 0, 0, 0.3),
+    0 0 10px #e91e63;
   letter-spacing: 1px;
 }
 
 #typed-text {
-  color: #4caf50; /* Green */
+  color: #4caf50;
   font-weight: 700;
   font-size: 1.1rem;
-  text-shadow: 0 0 10px #8bc34a; /* Light Green glow */
+  text-shadow: 0 0 10px #8bc34a;
 }
 
 .cursor {
@@ -163,21 +163,21 @@ header.hero {
 @keyframes blink {
   0%,
   100% {
-      opacity: 1;
+    opacity: 1;
   }
   50% {
-      opacity: 0;
+    opacity: 0;
   }
 }
 
 .ankit {
-  color: #ff9800; /* Orange */
-  text-shadow: 0 0 8px #ffc107; /* Amber glow */
+  color: #ff9800;
+  text-shadow: 0 0 8px #ffc107;
 }
 
 .raj {
-  color: #9c27b0; /* Purple */
-  text-shadow: 0 0 8px #ba68c8; /* Light Purple glow */
+  color: #9c27b0;
+  text-shadow: 0 0 8px #ba68c8;
 }
 
 h1,
@@ -189,7 +189,7 @@ h1 {
   margin: 20px 0 10px;
   font-size: 2.5rem;
   font-weight: 600;
-  text-shadow: 0 0 15px #fbc02d; /* Glowing effect for main heading */
+  text-shadow: 0 0 15px #fbc02d;
 }
 
 /* Scroll Animation */
@@ -332,7 +332,7 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 10px;
-  text-shadow: 0 0 8px rgba(0, 180, 216, 0.3), 0 0 15px #00b4d8; /* Stronger glow */
+  text-shadow: 0 0 8px rgba(0, 180, 216, 0.3), 0 0 15px #00b4d8;
 }
 
 .footer-grid {
@@ -391,90 +391,114 @@ h1 {
 
 @keyframes blinkGlow {
   from {
-      opacity: 1;
-      text-shadow: 0 0 5px #00b4d8, 0 0 10px #00b4d8;
+    opacity: 1;
+    text-shadow: 0 0 5px #00b4d8, 0 0 10px #00b4d8;
   }
   to {
-      opacity: 0.6;
-      text-shadow: 0 0 10px #00b4d8, 0 0 20px #00b4d8;
+    opacity: 0.6;
+    text-shadow: 0 0 10px #00b4d8, 0 0 20px #00b4d8;
   }
 }
 
-/* Bold Text Glowing Effect - Different Colors */
-section h2 {
-  text-shadow: 0 0 8px #ff6347, 0 0 15px #ff6347; /* Tomato for About (h2) */
+/* Heading Colors */
+#about h2 {
+  color: #1a5235; /* dark green */
+  text-shadow: 2px 2px 5px #b0f2b6;
 }
 
-#about section p strong {
-  color: #ff6347;
-  text-shadow: 0 0 8px #ff6347, 0 0 20px #ff6347; /* Tomato for About section strong */
+#skills h2 {
+  color: #8e44ad; /* dark purple */
+  text-shadow: 2px 2px 5px #d395d3;
 }
 
-#skills section h2 {
-  text-shadow: 0 0 8px #ffdb58, 0 0 15px #ffdb58; /* Mustard for Skills (h2) */
+#education h2 {
+  color: #2c3e50; /* very dark blue */
+  text-shadow: 2px 2px 5px #829cbc;
 }
 
-#skills section p strong {
-  color: #ffdb58;
-  text-shadow: 0 0 8px #ffdb58, 0 0 20px #ffdb58; /* Mustard for Skills section strong */
+#experience h2 {
+  color: #e67e22; /* orange-red */
+  text-shadow: 2px 2px 5px #f5b041;
 }
 
-#education section h2 {
-  text-shadow: 0 0 8px #4682b4, 0 0 15px #4682b4; /* SteelBlue for Education (h2) */
+#projects h2 {
+  color: #3498db; /* blue */
+  text-shadow: 2px 2px 5px #85c1e9;
 }
 
-#education section p strong {
-  color: blue; /* Blue for Diploma and MATRIC */
-  text-shadow: none; /* Remove glow for blue text */
+#contact h2 {
+  color: #c0392b; /* dark red */
+  text-shadow: 2px 2px 5px #e6b0aa;
 }
 
-#education section p span strong {
-  color: green; /* Green for pursuing and completed */
-  font-weight: bold; /* Make pursuing and completed bold */
-  text-shadow: none; /* Remove glow for green text */
+/* Contact Form Redesign */
+#contact .contact-container {
+  background-color: #f0f0f0;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
 }
 
-#experience section h2 {
-  text-shadow: 0 0 8px #32cd32, 0 0 15px #32cd32; /* LimeGreen for Experience (h2) */
+#contact .contact-title {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: 600;
 }
 
-#experience section p strong {
-  color: #32cd32;
-  text-shadow: 0 0 8px #32cd32, 0 0 20px #32cd32; /* LimeGreen for Experience section strong */
+#contact .contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  margin: auto;
 }
 
-#projects section h2 {
-  text-shadow: 0 0 8px #8a2be2, 0 0 15px #8a2be2; /* BlueViolet for Projects (h2) */
+#contact .contact-input,
+#contact .contact-textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #bdc3c7;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  outline: none;
+  box-sizing: border-box;
 }
 
-#projects section p strong {
-  color: #8a2be2;
-  text-shadow: 0 0 8px #8a2be2, 0 0 20px #8a2be2; /* BlueViolet for Projects section strong */
+#contact .contact-input:focus,
+#contact .contact-textarea:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
 }
 
-#contact section h2 {
-  text-shadow: 0 0 8px #ff1493, 0 0 15px #ff1493; /* DeepPink for Contact (h2) */
+#contact .contact-textarea {
+  resize: vertical;
+  height: 120px;
 }
 
-#contact section p strong {
-  color: #ff1493;
-  text-shadow: 0 0 8px #ca8eae, 0 0 20px #ff1493; /* DeepPink for Contact section strong */
-}
-
-/* Resume Button in About Section */
-.resume-button {
-  background-color: blue;
+#contact .contact-button {
+  padding: 12px 30px;
+  background-color: #3498db;
   color: white;
-  padding: 10px 20px;
   border: none;
   border-radius: 8px;
+  font-size: 1.1rem;
   cursor: pointer;
-  font-size: 1rem;
-  margin-top: 20px;
-  box-shadow: 4px 4px 8px #888888;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: fit-content;
 }
 
-.resume-button:hover {
-  background-color: #0056b3;
+#contact .contact-button:hover {
+  background-color: #217dbb;
+  transform: translateY(-2px);
+}
+
+#contact .contact-button:active {
+  background-color: #1a5275;
+  transform: translateY(0);
 }
