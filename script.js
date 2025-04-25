@@ -36,24 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-// 2. Typewriter Effect for About Section
-const aboutText = "Hi! I'm Ankit Raj Maurya, a passionate web developer from Muzaffarpur, Bihar. Currently pursuing a Diploma in Computer Science at NRI Institute of Research and Technology (2024–2027), I specialize in creating responsive and user-friendly websites. With hands-on experience from my internship at Tata Power Skill Development Institute and various freelance projects, I have honed my skills in:";
-let aboutIndex = 0;
-function typeAboutMe() {
-    const element = document.getElementById("type-about");
-    if (element) {
-        if (aboutIndex < aboutText.length) {
-            element.textContent += aboutText.charAt(aboutIndex);
-            aboutIndex++;
-            setTimeout(typeAboutMe, 40);
-        }
-    }
-}
-
-// Ensure the typeAboutMe function starts after the window is fully loaded
-window.addEventListener("load", typeAboutMe);
-
-// 3. Scroll Animation
+// 3. Scroll Animation for Sections
 const sections = document.querySelectorAll(".section-box");
 function checkScroll() {
     sections.forEach((section) => {
@@ -122,14 +105,14 @@ const originalTitle = document.title;
 const newTitle = "Come Back Soon!"; // The text you want to display
 
 document.addEventListener('visibilitychange', function() {
-  if (document.hidden) {
-    document.title = newTitle;
-  } else {
-    document.title = originalTitle;
-  }
+    if (document.hidden) {
+        document.title = newTitle;
+    } else {
+        document.title = originalTitle;
+    }
 });
 
-// 9. Back to Top Button Functionality (Included in HTML <script> tag, but for completeness)
+// 9. Back to Top Button Functionality
 let backToTopButton = document.getElementById("backToTop");
 window.onscroll = function() {
     if (backToTopButton) {
@@ -146,10 +129,51 @@ document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function() {
-            // You can add a slight delay if needed to ensure the Formspree submission starts
             setTimeout(function() {
-                window.location.href = '#'; // Or your actual homepage URL
-            }, 500); // Adjust the delay in milliseconds as needed
+                window.location.href = '#';
+            }, 500);
         });
     }
 });
+
+// 11. Show About Section Line on Scroll
+const aboutSection = document.getElementById('about');
+const aboutLine = document.querySelector('#about .about-line');
+
+function checkAboutLine() {
+    if (aboutSection && aboutLine) {
+        const top = aboutSection.getBoundingClientRect().top;
+        if (top < window.innerHeight - 200) {
+            aboutLine.classList.add('show');
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', checkAboutLine);
+window.addEventListener('scroll', checkAboutLine);
+
+// 12. Line by Line Loading Animation for About Section Text
+const aboutDescription = document.querySelector('#about .about-description');
+const aboutLines = aboutDescription ? Array.from(aboutDescription.children) : [];
+
+aboutLines.forEach((line, index) => {
+    line.style.opacity = 0;
+    line.style.transform = 'translateY(20px)';
+    line.style.transition = `opacity 0.5s ease ${index * 0.2 + 0.5}s, transform 0.5s ease ${index * 0.2 + 0.5}s`;
+});
+
+function animateAboutLines() {
+    if (aboutSection && aboutLines.length > 0) {
+        const top = aboutSection.getBoundingClientRect().top;
+        if (top < window.innerHeight - 150) { // Adjust trigger point as needed
+            aboutLines.forEach(line => {
+                line.style.opacity = 1;
+                line.style.transform = 'translateY(0)';
+            });
+            window.removeEventListener('scroll', animateAboutLines); // Stop animation once visible
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', animateAboutLines);
+window.addEventListener('scroll', animateAboutLines);
