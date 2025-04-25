@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Ankit Raj Maurya | Web Developer Portfolio</title>
+    <title>Ankit Raj | Web Developer Portfolio</title>
     <link id="favicon" rel="shortcut icon" href="pic.jpg" type="image/x-png">
 
     <meta name="description" content="Ankit Raj Maurya's professional web developer portfolio, showcasing skills, projects, and experience in web development." />
@@ -66,13 +66,27 @@
     <section id="about" class="section-box about-section" data-aos="fade-up">
         <div class="container about-container">
             <h2 class="section-title about-title">About Me</h2>
-            <p id="type-about" class="about-description">Hi! I'm Ankit Raj Maurya, a passionate web developer from Muzaffarpur, Bihar. Currently pursuing a Diploma in Computer Science at <strong>NRI Institute of Research and Technology</strong> (2024–2027), I specialize in creating responsive and user-friendly websites.
-
-With hands-on experience from my internship at Tata Power Skill Development Institute and various freelance projects, I have honed my skills in:</p>
+            <p id="type-about" class="about-description"> <h3>I'm Ankit</h3>
+                <span class="tag">Software Engineer</span>
+                
+                <p>I am a Software Engineer based in Bihar, India. 
+                  I am very passionate about improving my coding skills & developing applications & websites.
+                  Working for myself to improve my skills.
+                  Love to build Full-Stack clones. </p>
+                
+                <div class="box-container">
+                    <!-- <div class="box">
+                      <p><span> age: </span> 20</p>
+                      <p><span> phone : </span> +91 XXX-XXX-XX09</p>
+                    </div> -->
+                    <div class="box">
+                      <p><span> email : </span> ankit5242raj1@outlook.com</p>
+                      <p><span> place : </span> Muzaffarpur, Bihar, 84316</p>
+                    </div>
             <br>
             <div class="resumebtn about-resumebtn">
     <a href="https://drive.google.com/file/d/1359Lhc3l75iBDmdHSWJDFBz4O8sG33MJ/view?usp=drivesdk" target="_blank" class="resume-button about-resume-button"><span>Resume</span>
-        <i class="btn about-btn-icon"></i>
+        <i class="fas fa-download btn about-btn-icon"></i>
     </a>
 </div>
         </div>
@@ -184,7 +198,7 @@ With hands-on experience from my internship at Tata Power Skill Development Inst
         // Toggle Menu for Mobile Nav
         function toggleMenu() {
             var menu = document.getElementById("dropdownMenu");
-            menu.style.display = (menu.style.display === "block") ? "none" : "block";
+            menu.classList.toggle("open"); // Using 'open' class
         }
 
         // Redirect to home after form submission
