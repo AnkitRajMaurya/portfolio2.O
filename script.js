@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // 2. Typewriter Effect for About Section
-const aboutText = "I'm Ankit Raj from Muzaffarpur, Bihar. I love Web & App Development. Learning every day to build better software.";
+const aboutText = "Hi! I'm Ankit Raj Maurya, a passionate web developer from Muzaffarpur, Bihar. Currently pursuing a Diploma in Computer Science at NRI Institute of Research and Technology (2024–2027), I specialize in creating responsive and user-friendly websites. With hands-on experience from my internship at Tata Power Skill Development Institute and various freelance projects, I have honed my skills in:";
 let aboutIndex = 0;
 function typeAboutMe() {
     const element = document.getElementById("type-about");
@@ -83,7 +83,7 @@ window.onscroll = function () {
 function toggleMenu() {
     const dropdown = document.getElementById("dropdownMenu");
     if (dropdown) {
-        dropdown.classList.toggle("show-dropdown");
+        dropdown.classList.toggle("open"); // Using 'open' class as per updated CSS
     }
 }
 
@@ -110,8 +110,8 @@ document.querySelectorAll('nav a').forEach(anchor => {
 
             // Close dropdown menu if open after clicking a link
             const dropdown = document.getElementById("dropdownMenu");
-            if (dropdown && dropdown.classList.contains("show-dropdown")) {
-                dropdown.classList.remove("show-dropdown");
+            if (dropdown && dropdown.classList.contains("open")) { // Checking for 'open' class
+                dropdown.classList.remove("open");
             }
         }
     });
@@ -127,4 +127,29 @@ document.addEventListener('visibilitychange', function() {
   } else {
     document.title = originalTitle;
   }
+});
+
+// 9. Back to Top Button Functionality (Included in HTML <script> tag, but for completeness)
+let backToTopButton = document.getElementById("backToTop");
+window.onscroll = function() {
+    if (backToTopButton) {
+        backToTopButton.style.display = (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? "block" : "none";
+    }
+};
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+// 10. Redirect to home after form submission
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function() {
+            // You can add a slight delay if needed to ensure the Formspree submission starts
+            setTimeout(function() {
+                window.location.href = '#'; // Or your actual homepage URL
+            }, 500); // Adjust the delay in milliseconds as needed
+        });
+    }
 });
