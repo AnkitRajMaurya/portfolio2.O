@@ -6,6 +6,28 @@
 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00BFFF&center=true&vCenter=true&width=550&lines=Building+modern+web+and+mobile+applications...;From+Problem+to+Production-Ready...;Specializing+in+MERN+Stack+and+Flutter...;Let's+connect+and+build+something+great!"/>
 </div>
 
+<div align="center">
+
+
+
+
+
+<a href="https://ankitrajmaurya.github.io/portfolio2.O/">
+<!--
+TODO: Replace this placeholder with an actual screenshot of your website.
+1. Take a screenshot of your portfolio.
+2. Upload it (e.g., to a GitHub issue, Cloudinary, Imgur).
+3. Replace the 'src' URL below with your new image URL.
+-->
+<img src="https://placehold.co/800x400/1A1B27/00BFFF?text=My+Portfolio+Screenshot" alt="Portfolio Screenshot" width="80%" style="border-radius: 12px;"/>
+</a>
+
+
+
+
+
+</div>
+
 <table width="100%">
 <tr>
 <td width="65%">
@@ -44,71 +66,17 @@ Hello! I'm Ankit, a passionate full-stack developer based in Muzaffarpur, Bihar.
 <details>
 <summary><strong>🌐 Frontend Development</strong></summary>
 
-
-
-
-
-<p align="left">
-<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/>
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
-<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
-</p>
-</details>
-
 <details>
 <summary><strong>⚙️ Backend & Database</strong></summary>
-
-
-
-
-
-<p align="left">
-<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js"/>
-<img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express.js"/>
-<img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB"/>
-</p>
-</details>
 
 <details>
 <summary><strong>📱 Mobile Development</strong></summary>
 
-
-
-
-
-<p align="left">
-<img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter"/>
-<img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android"/>
-</p>
-</details>
-
 <details>
 <summary><strong>💡 Programming Languages</strong></summary>
 
-
-
-
-
-<p align="left">
-<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java"/>
-<img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white" alt="C"/>
-</p>
-</details>
-
 <details>
 <summary><strong>🛠️ Tools & Platforms</strong></summary>
-
-
-
-
-
-<p align="left">
-<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
-<img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code"/>
-</p>
-</details>
 
 🛠️ Featured Projects
 
@@ -136,14 +104,14 @@ Freelancer - Built websites and apps for clients.
 
 Education
 
-Diploma in Computer Science - NRI Institute of Research and Technology (2024 - 2027)
+Diploma in Computer Science - NRI Institute of Research andT'style='background-color: #F05032; color: white; padding: 2px 6px; margin: 2px; border-radius: 3px; echnology (2024 - 2027)
 
 MATRIC (10th) - Bihar School Examination Board (2024)
 
 📊 My GitHub Activity & Stats
 
 <p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=AnkitRajMaurya&show_icons=true&theme=tokyonight&border_radius=12&hide_border=true" height="185" alt="GitHub Stats"/>
+<img src="httpsS://github-readme-stats.vercel.app/api?username=AnkitRajMaurya&show_icons=true&theme=tokyonight&border_radius=12&hide_border=true" height="185" alt="GitHub Stats"/>
 <img src="https://github-readme-streak-stats.herokuapp.com?user=AnkitRajMaurya&theme=tokyonight_duo&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" height="185" alt="GitHub Streak"/>
 </p>
 <p align="center">
