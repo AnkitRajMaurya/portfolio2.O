@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:111111,100:00BFFF&height=250&text=Hey,%20I'm%20Ankit%20Raj%20Maurya%20👋&fontAlign=50&fontAlignY=40&fontSize=50&desc=Full%20Stack%20Developer%20%7C%20MERN%20Stack%20%7C%20Flutter&descAlignY=62&descAlign=50" alt="Header Banner"/>
+<img src="img/portfolio.png"/>
 </div>
 
 <div align="center">
