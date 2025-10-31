@@ -19,7 +19,7 @@ TODO: Replace this placeholder with an actual screenshot of your website.
 2. Upload it (e.g., to a GitHub issue, Cloudinary, Imgur).
 3. Replace the 'src' URL below with your new image URL.
 -->
-<img src="https://placehold.co/800x400/1A1B27/00BFFF?text=My+Portfolio+Screenshot" alt="Portfolio Screenshot" width="80%" style="border-radius: 12px;"/>
+<img src="img/Portfolio.png" alt="Portfolio Screenshot" width="80%" style="border-radius: 12px;"/>
 </a>
 
 
